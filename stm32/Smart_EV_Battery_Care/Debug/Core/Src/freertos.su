@@ -1,0 +1,2 @@
+../Core/Src/freertos.c:47:6:MX_FREERTOS_Init	8	static
+../Core/Src/freertos.c:54:6:StartBMSMonitorTask	24	static
