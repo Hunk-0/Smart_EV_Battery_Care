@@ -1,10 +1,5 @@
-../Core/Src/bootloader.c:28:13:UART_Log	1
-../Core/Src/bootloader.c:34:10:CRC32_Calculate	3
-../Core/Src/bootloader.c:45:17:GetSector	8
-../Core/Src/bootloader.c:57:26:EraseFlashSectors	1
-../Core/Src/bootloader.c:75:26:WriteFlash	5
-../Core/Src/bootloader.c:108:13:SendACK	1
-../Core/Src/bootloader.c:129:13:SendResult	1
-../Core/Src/bootloader.c:149:6:BL_Init	1
-../Core/Src/bootloader.c:177:6:BL_Run	14
-../Core/Src/bootloader.c:327:6:BL_JumpToApp	2
+../Core/Src/bootloader.c:18:6:UART_Log	1
+../Core/Src/bootloader.c:24:9:BL_Check_For_OTA_Start	1
+../Core/Src/bootloader.c:29:6:BL_Flash_Process	1
+../Core/Src/bootloader.c:34:6:BL_JumpToApp	2
+../Core/Src/bootloader.c:47:6:BL_Run	3

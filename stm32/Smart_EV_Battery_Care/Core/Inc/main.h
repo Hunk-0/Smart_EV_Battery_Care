@@ -53,7 +53,9 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-
+void Servo_SetAngle(uint8_t angle);
+extern float g_display_temp;
+extern uint8_t g_virtual_load;
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

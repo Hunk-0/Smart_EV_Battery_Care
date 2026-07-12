@@ -56,6 +56,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 Smart_EV_Battery_Care.list \
 
+OBJCOPY_BIN += \
+Smart_EV_Battery_Care.bin \
+
 
 # All Target
 all: main-build
@@ -79,12 +82,17 @@ Smart_EV_Battery_Care.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL
 	@echo 'Finished building: $@'
 	@echo ' '
 
+Smart_EV_Battery_Care.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "Smart_EV_Battery_Care.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) Smart_EV_Battery_Care.elf Smart_EV_Battery_Care.list Smart_EV_Battery_Care.map default.size.stdout
+	-$(RM) Smart_EV_Battery_Care.bin Smart_EV_Battery_Care.elf Smart_EV_Battery_Care.list Smart_EV_Battery_Care.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
