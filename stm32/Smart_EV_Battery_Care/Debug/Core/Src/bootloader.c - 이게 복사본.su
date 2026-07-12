@@ -1,0 +1,10 @@
+../Core/Src/bootloader.c - 이게 복사본.c:28:13:UART_Log	16	static
+../Core/Src/bootloader.c - 이게 복사본.c:34:10:CRC32_Calculate	32	static
+../Core/Src/bootloader.c - 이게 복사본.c:45:17:GetSector	16	static
+../Core/Src/bootloader.c - 이게 복사본.c:57:26:EraseFlashSectors	48	static
+../Core/Src/bootloader.c - 이게 복사본.c:75:26:WriteFlash	56	static
+../Core/Src/bootloader.c - 이게 복사본.c:108:13:SendACK	56	static
+../Core/Src/bootloader.c - 이게 복사본.c:129:13:SendResult	56	static
+../Core/Src/bootloader.c - 이게 복사본.c:149:6:BL_Init	56	static
+../Core/Src/bootloader.c - 이게 복사본.c:177:6:BL_Run	56	static
+../Core/Src/bootloader.c - 이게 복사본.c:231:6:BL_JumpToApp	104	static,ignoring_inline_asm

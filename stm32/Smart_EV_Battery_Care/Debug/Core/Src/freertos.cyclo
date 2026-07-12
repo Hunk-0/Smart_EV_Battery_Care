@@ -1,2 +1,5 @@
-../Core/Src/freertos.c:47:6:MX_FREERTOS_Init	1
-../Core/Src/freertos.c:54:6:StartBMSMonitorTask	5
+../Core/Src/freertos.c:76:6:MX_FREERTOS_Init	1
+../Core/Src/freertos.c:132:6:StartDefaultTask	1
+../Core/Src/freertos.c:147:6:StartBmsTelemetryTask	1
+../Core/Src/freertos.c:152:6:DisplayTask_Entry	2
+../Core/Src/freertos.c:172:6:ServoTask_Entry	2

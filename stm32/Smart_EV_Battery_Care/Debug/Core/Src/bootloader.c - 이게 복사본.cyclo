@@ -1,0 +1,10 @@
+../Core/Src/bootloader.c - 이게 복사본.c:28:13:UART_Log	1
+../Core/Src/bootloader.c - 이게 복사본.c:34:10:CRC32_Calculate	3
+../Core/Src/bootloader.c - 이게 복사본.c:45:17:GetSector	8
+../Core/Src/bootloader.c - 이게 복사본.c:57:26:EraseFlashSectors	1
+../Core/Src/bootloader.c - 이게 복사본.c:75:26:WriteFlash	5
+../Core/Src/bootloader.c - 이게 복사본.c:108:13:SendACK	1
+../Core/Src/bootloader.c - 이게 복사본.c:129:13:SendResult	1
+../Core/Src/bootloader.c - 이게 복사본.c:149:6:BL_Init	1
+../Core/Src/bootloader.c - 이게 복사본.c:177:6:BL_Run	5
+../Core/Src/bootloader.c - 이게 복사본.c:231:6:BL_JumpToApp	2
